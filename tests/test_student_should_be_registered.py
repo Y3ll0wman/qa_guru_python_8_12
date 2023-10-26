@@ -2,7 +2,7 @@ from qa_guru_python_8_12.pages.registration_page import RegistrationPage
 
 
 def test_student_registration_form(setup_browser):
-    registration_page = RegistrationPage(setup_browser)
+    registration_page = RegistrationPage()
 
     # GIVEN
     registration_page.open()
