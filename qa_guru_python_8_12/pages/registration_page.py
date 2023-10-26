@@ -3,7 +3,9 @@ from qa_guru_python_8_12 import resource
 
 
 class RegistrationPage:
+
     def open(self):
+        browser.config.driver.maximize_window()
         browser.open('/automation-practice-form')
 
     def fill_first_name(self, value):
