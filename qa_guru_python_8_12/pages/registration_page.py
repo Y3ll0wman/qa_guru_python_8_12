@@ -8,7 +8,6 @@ class RegistrationPage:
 
     def open(self):
         with allure.step('Открыть форму регистрации студента'):
-            browser.config.driver.maximize_window()
             browser.open('/automation-practice-form')
 
     def fill_first_name(self, value):
