@@ -1,9 +1,9 @@
 from qa_guru_python_8_12.pages.registration_page import RegistrationPage
 
-registration_page = RegistrationPage()
 
+def test_student_registration_form(setup_browser):
+    registration_page = RegistrationPage(setup_browser)
 
-def test_student_registration_form():
     # GIVEN
     registration_page.open()
 
